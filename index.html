@@ -44,7 +44,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 100dvh;
+    min-height: 100vh;
     padding: 32px 24px;
   }
 
@@ -96,14 +96,14 @@
   h1 {
     font-family: "Fraunces", Georgia, serif;
     font-weight: 500;
-    font-size: clamp(2rem, 6vw, 2.6rem);
+    font-size: clamp(1.6rem, 6vw, 2rem);
     line-height: 1.15;
     margin: 28px 0;
     letter-spacing: -0.01em;
   }
 
   p.desc {
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 8vw, 1rem);
     line-height: 1.6;
     font-weight: 400;
     margin: 2px 0;
@@ -129,7 +129,7 @@
     color: var(--ink);
   }
 
-  svg.hey{
+  main svg{
   color:var(--muted)
   }
 
@@ -211,18 +211,17 @@ footer a:hover{
   </div>
 
   <main>
-    <svg class="hey" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M38.643 65.0008C28.0606 58.7212 13.3041 39.0249 17.8904 36.5366C20.413 35.1679 23.6838 36.3402 26.4793 38.1372M26.4793 38.1372C30.0368 40.424 32.8246 43.7227 32.3208 44.084C31.7027 44.5272 29.1226 41.7897 26.4793 38.1372ZM26.4793 38.1372C22.4942 32.6306 18.3654 25.0446 20.5987 23.1435C22.565 21.4698 27.8488 24.9903 32.1431 28.85M32.1431 28.85C35.9616 32.2822 38.9978 35.9826 38.2234 36.5377C37.1901 37.2783 34.4442 33.5424 32.1431 28.85ZM32.1431 28.85C29.2627 22.9764 27.079 15.6043 29.8228 13.6376C33.0028 11.3582 39.0527 20.3876 42.5147 27.4154M42.5147 27.4154C44.4262 31.2958 45.5488 34.5659 44.9638 34.9851C44.2693 35.4825 43.1494 31.8547 42.5147 27.4154ZM42.5147 27.4154C41.646 21.3399 41.6859 13.7446 44.9687 13.123C50 12.1691 52.5 25.4176 55.5 34.5004M55.5 34.5004C57.4816 40.5 56.5 43.5 54.8138 44.1075C52 45.1213 51.2402 41.0937 55.5 34.5004ZM55.5 34.5004C57.3166 31.6887 62.9074 25.3553 65.3209 25.4168C72.5436 26.8515 65.3209 45.7158 59.9039 62.0983" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-      <path opacity="0.5" d="M55.8541 11.636C60.9999 14.5 62.9999 18.5 63.4502 23.195M59.2429 5C66.4999 9.5 69.4999 15 70.9999 21.8079M9.6675 42.1795C10.4999 47.5 14.9999 54 19.4999 56.5M3.28857 42.3979C5.49994 52 10.4999 59 16.8913 63.084" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-      </svg>
-         
-              
+      <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M38.6436 65.0008C28.0612 58.7212 13.3047 39.0249 17.891 36.5366C20.4136 35.1679 23.6844 36.3402 26.4799 38.1372M26.4799 38.1372C30.0375 40.424 32.8252 43.7227 32.3214 44.084C31.7033 44.5272 29.1232 41.7897 26.4799 38.1372ZM26.4799 38.1372C22.4948 32.6306 18.366 25.0446 20.5994 23.1435C22.5656 21.4698 27.8494 24.9903 32.1437 28.85M32.1437 28.85C35.9623 32.2822 38.9984 35.9826 38.224 36.5377C37.1907 37.2783 34.4449 33.5424 32.1437 28.85ZM32.1437 28.85C29.2633 22.9764 27.0796 15.6043 29.8234 13.6376C33.0035 11.3582 39.0533 20.3876 42.5153 27.4154M42.5153 27.4154C44.4269 31.2958 45.5495 34.5659 44.9644 34.9851C44.27 35.4825 43.15 31.8547 42.5153 27.4154ZM42.5153 27.4154C41.6466 21.3399 41.6865 13.7446 44.9693 13.123C50.0006 12.1691 52.5006 25.4176 55.5006 34.5004M55.5006 34.5004C57.4823 40.5 56.5006 43.5 54.8144 44.1075C52.0006 45.1213 51.2408 41.0937 55.5006 34.5004ZM55.5006 34.5004C57.3172 31.6887 62.908 25.3553 65.3216 25.4168C72.5442 26.8515 65.3216 45.7158 59.9045 62.0983" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path opacity="0.5" d="M53.8546 9.63596C59.0004 12.5 61.0004 16.5 61.4507 21.195M58.2434 4C65.5004 8.5 68.5004 14 70.0004 20.8079M9.66799 42.1795C10.5004 47.5 15.0004 54 19.5004 56.5M3.28906 42.3979C5.50042 52 10.5004 59 16.8918 63.084" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+           
     <h1>Okay, you got me.</h1>
     <p class="desc desc-1">
       You saw a mail from a sender you didn't recognize and, instead of ignoring it, you opened it. I respect that.
     </p>
     <p class="desc desc-2">
-      I'm Krish, a real person doing some research and trying to learn from people who actually do the work. No bot, no funnel, no pitch buried in paragraph three.
+      I'm Krish, doing some research and trying to learn from people who actually do the work. No bot, no funnel, no pitch buried in paragraph three.
     </p>
     <div class="stats">
       Emails sent: <span>47</span> · Replies: <span>3</span> · You could be <span>#4</span>
