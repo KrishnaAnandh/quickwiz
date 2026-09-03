@@ -133,12 +133,68 @@
   color:var(--muted)
   }
 
-  main a{
-    color:var(--muted);
+  main .schedule-link{
+    height:44px;
+    width:calc(115px + 40px);
+    overflow: hidden;
+    position:relative;
+    transition: all ease 0.5s;
+    text-decoration:none;
   }
-  main a:hover{
+
+  main .schedule-link p, main .schedule-link span{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%, 0);
+    color:var(--muted);
+    font-size: clamp(0.8rem, 8vw, 1rem);
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 10px 0;
+    width:115px;
+    text-decoration:none;
+    transition: all ease 0.5s;
+  } 
+
+  main .schedule-link p{
+    opacity:1;
+    filter:blur(0px);
+  }
+  main .schedule-link span{
+    opacity:0;
+    filter:blur(20px);
+    z-index:2;
+  }
+
+  main .schedule-link .svg{
+    width:calc(100% - 40px);
+    height:100%;
+    position:absolute;
+    bottom:4px;
+    margin:0 20px;
+    transition: all ease 1s;
+    overflow:hidden;
+  }
+  main .schedule-link .svg svg{
+    width:300%;
+    height:100%;
+    position:absolute;
+    bottom:0px;
+    left:-200%;
+    transition: all ease 1s;
+  }
+  main .schedule-link:hover span{
+    opacity:1;
     color:var(--ink);
-    content: "Schedule a Call"
+    filter:blur(0px);
+  }
+  main .schedule-link:hover p{
+    opacity:0;
+    filter:blur(20px);
+  }
+  main .schedule-link:hover svg{
+  left:0%;
   }
     
 
@@ -250,12 +306,20 @@ footer a:hover{
       You saw a mail from a sender you didn't recognize and, instead of ignoring it, you opened it. I respect that.
     </p>
     <p class="desc desc-2">
-      I'm Krish, doing some research and trying to learn from people who actually do the work. No bot, no funnel, no pitch buried in paragraph three.
+      I'm Krish, doing some research and trying to learn from people who actually do the work.
     </p>
     <div class="stats">
       Emails sent: <span>47</span> · Replies: <span>3</span> · You could be <span>#4</span>
     </div>
-    <a href="https://cal.com/kribbler/15min?overlayCalendar=true"> Should we speak?</a>
+    <a href="https://cal.com/kribbler/15min?overlayCalendar=true" class="schedule-link">
+      <p> Should we talk? </p>
+      <span> Schedule a call</span>
+      <div class="svg">
+        <svg stroke="currentColor" fill="transparent" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+          <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        </svg>
+      </div>
+    </a>
   </main>
 
   <footer>
